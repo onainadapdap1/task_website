@@ -119,8 +119,9 @@
 
             <div class="content">
                 <h3>Kenapa memilih perusahaan kami?</h3>
-                <p>Mercedes-Benz, commonly referred to as Mercedes and sometimes as Benz, is a German luxury and commercial vehicle automotive brand established in 1926.</p>
-                <p> Mercedes-Benz AG is headquartered in Stuttgart, Baden-Württemberg, Germany</p>
+                {{-- <p>Mercedes-Benz, commonly referred to as Mercedes and sometimes as Benz, is a German luxury and commercial vehicle automotive brand established in 1926.</p> --}}
+                <p>Mercedes-Benz adalah produsen mobil mewah dan kendaraan komersial asal Jerman yang merupakan bagian dari perusahaan induk Daimler AG. Merek ini dikenal karena kualitas, teknologi inovatif, dan warisan prestise dalam industri otomotif.</p>
+                {{-- <p> Mercedes-Benz AG is headquartered in Stuttgart, Baden-Württemberg, Germany</p> --}}
             </div>
             <div class="about-img">
                 <img src="{{ asset("user/img/tentang-mer.jpg") }}" width="600px" height="600px" alt="Tentang Kami">
@@ -134,7 +135,7 @@
         <h2><span>Produk</span> Kami</h2>
 
         <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, repellendus numquam quam tempora voluptatum.
+            Mercedes-Benz menawarkan beragam produk kendaraan yang mencakup berbagai segmen pasar, mulai dari mobil mewah hingga kendaraan komersial. Berikut adalah gambaran singkat tentang beberapa produk utama Mercedes-Benz
         </p>
 
         <div class="row">
@@ -284,8 +285,8 @@
             </div>
             <div class="content">
                 <h3>Kejutan! Lewis Hamilton Akan Tinggalkan Mercedes dan Gabung Ferrari pada F1 2025</h3>
-                <p>Mercedes-Benz, commonly referred to as Mercedes and sometimes as Benz, is a German luxury and commercial vehicle automotive brand established in 1926.</p>
-                <p> Mercedes-Benz AG is headquartered in Stuttgart, Baden-Württemberg, Germany</p>
+                <p>Jika Lewis Hamilton benar-benar akan meninggalkan Mercedes dan bergabung dengan Ferrari pada musim Formula 1 2025, itu pasti akan menjadi kejutan besar dalam dunia balap. Ini akan menjadi peristiwa yang akan menarik perhatian banyak penggemar balap, karena Hamilton adalah salah satu pembalap terkemuka dalam sejarah Formula 1 dan telah memiliki koneksi yang kuat dengan Mercedes selama beberapa tahun terakhir.</p>
+                {{-- <p> Mercedes-Benz AG is headquartered in Stuttgart, Baden-Württemberg, Germany</p> --}}
             </div>
 
         </div>
