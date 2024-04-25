@@ -1,0 +1,338 @@
+:root {
+    --primary: #b6895b;
+    --bg: #010101;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg);
+    color: #fff;
+    min-height: 5000px;
+}
+
+/* navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 7%;
+    background-color: rgba(1, 1, 1, 0.8);
+    border-bottom: 1px solid #513c28;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+/* .navbar-auth {
+    display: flex;
+    align-items: center;
+} */
+
+.navbar .navbar-logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    font-style: italic;
+}
+
+.navbar .navbar-logo span {
+    color: var(--primary);
+}
+
+.navbar .navbar-nav a {
+    color: #fff;
+    display: inline-block;
+    font-size: 1.3rem;
+    margin: 0 1rem;
+}
+.navbar .navbar-nav a:hover {
+    color: var(--primary);
+}
+
+.navbar .navbar-nav a::after {
+    content: '';
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid var(--primary);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.5);
+}
+
+.navbar .navbar-extra a {
+    color: #fff;
+    margin: 0 0.5rem;
+}
+
+.navbar .navbar-extra a:hover {
+    color: var(--primary);
+}
+
+
+/* Hero Section */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url('../img/merse.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    bottom: 0;
+    background: linear-gradient(0deg, rgba(1, 1, 3, 1) 3%, rgba(255, 255, 255, 0) 25%);
+}
+
+.hero .content {
+    padding: 1.4rem 7%;
+    max-width: 60rem;
+}
+
+.hero .content h1 {
+    font-size: 5em;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+    line-height: 1.2;
+}
+
+.hero .content h1 span {
+    color: var(--primary);
+}
+
+.hero .content p {
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    line-height: 1.4;
+    font-weight: 100;
+    text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+    mix-blend-mode: difference;
+}
+
+.hero .content .cta {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-size: 1.4rem;
+    color: #fff;
+    background-color: var(--primary);
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+}
+
+/* About section */
+.about,
+.menu,
+.client,
+.visi_misi,
+.artikel,
+.contact {
+    padding: 8rem 7%;
+}
+
+.about h2,
+.menu h2,
+.client h2,
+.galeri h2,
+.artikel h2,
+.contact h2 {
+    text-align: center;
+    font-size: 2.6rem;
+    margin-bottom: 3rem;
+}
+
+
+.about h2 span,
+.menu h2 span,
+.client h2 span,
+.galeri h2 span,
+.visi_misi h2 span,
+.artikel h2 span,
+.contact h2 span{
+    color: var(--primary);
+}
+
+.about .row,
+.visi_misi .row,
+.artikel .row {
+    display: flex;
+}
+
+.about .row .about-img,
+.artikel .row .artikel-img {
+    flex: 1 1 45rem;
+}
+
+.about .row .about-img img,
+.artikel .row .artikel-img img {
+    width: 100%;
+}
+
+.about .row .content,
+.artikel .row .content {
+    flex: 1 1 35rem;
+    padding: 0 1rem;
+}
+
+.about .row .content h3,
+.artikel .row .content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.about .row .content p,
+.artikel .row .content p {
+    margin-bottom: 0.8rem;
+    font-size: 1.3rem;
+    font-weight: 100;
+    line-height: 1.6;
+    /* text-align: right; */
+}
+
+/* Menu Section */
+.menu h2{
+    margin-bottom: 1rem;
+}
+
+.menu p,
+.products p,
+.contact p,
+.galeri p,
+.client p{
+    text-align: center;
+    max-width: 30rem;
+    margin: auto;
+    font-weight: 100;
+    line-height: 1.6;
+}
+
+.menu .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+    justify-content: center;
+}
+
+.menu .row .menu-card {
+    text-align: center;
+    padding-bottom: 4rem;
+}
+
+.menu .row .menu-card img {
+    border-radius: 50%;
+    width: 80%;
+}
+
+.menu .row .menu-card .menu-card-title {
+    margin: 1rem auto 0.5rem;
+}
+
+/* daftar client */
+.client .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+    justify-content: center;
+}
+
+
+.client .row .client-card {
+    text-align: center;
+    padding-bottom: 4rem;
+}
+
+.client .row .client-card img {
+    /* padding: 10px; */
+    border-radius: 50%;
+    width: 80%;
+}
+
+.client .row .client-card .client-card-title {
+    margin: 1rem auto 0.5rem;
+}
+/* end daftar client */
+
+/* start galeri */
+.galeri .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+    justify-content: center;
+}
+
+
+.galeri .row .galeri-card {
+    text-align: center;
+    padding-bottom: 4rem;
+}
+
+.galeri .row .galeri-card img {
+    /* padding: 10px; */
+    border-radius: 50%;
+    width: 80%;
+}
+/* end galeri */
+
+/* Contact Section */
+/* Contact Section */
+.contact {
+    background-color: #f9f9f9;
+    padding: 8rem 0; /* Mengurangi padding samping */
+}
+
+.contact h2 {
+    margin-bottom: 3rem;
+    color: var(--primary); /* Mengubah warna judul */
+}
+
+.contact p {
+    text-align: center;
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+    color: black; /* Warna teks abu-abu */
+    font-weight: bold;
+}
+
+.contact .row {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-info {
+    width: 80%; /* Lebar info kontak */
+    max-width: 600px; /* Batasi lebar maksimum */
+    background-color: #fff; /* Warna latar belakang */
+    padding: 30px; /* Spasi dalam kotak kontak */
+    border-radius: 10px; /* Sudut kotak kontak */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Bayangan kotak */
+}
+
+.contact-info p {
+    margin: 10px 0;
+    font-size: 1.4rem;
+    color: #333; /* Warna teks hitam */
+}
+
+.contact-info p strong {
+    font-weight: bold; /* Teks tebal */
+}
+
